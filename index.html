@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人介紹</title>
+    <style>
+        :root {
+            --background-color: #f9f5eb;
+            --text-color: #333;
+            --accent-color: #a67a5b;
+            --font-family: 'Georgia', serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .theme-toggle {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .link-button {
+            background-color: #ddd;
+            color: var(--text-color);
+        }
+
+        .link-button:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="your-photo.jpg" alt="我的照片">
+        <h1>你好！我是 [你的名字]</h1>
+        <p>這是一段簡短的介紹文字，可以描述你的興趣、專業背景或其他個人資訊。希望你能喜歡這個網站！</p>
+
+        <div class="button-container">
+            <button class="theme-toggle" onclick="toggleTheme()">切換風格</button>
+            <button class="link-button" onclick="openNewPage()">到另一個分頁</button>
+        </div>
+    </div>
+
+    <script>
+        let darkMode = false;
+
+        function toggleTheme() {
+            if (!darkMode) {
+                document.documentElement.style.setProperty('--background-color', '#333');
+                document.documentElement.style.setProperty('--text-color', '#f9f5eb');
+                document.documentElement.style.setProperty('--accent-color', '#5b9aa0');
+            } else {
+                document.documentElement.style.setProperty('--background-color', '#f9f5eb');
+                document.documentElement.style.setProperty('--text-color', '#333');
+                document.documentElement.style.setProperty('--accent-color', '#a67a5b');
+            }
+            darkMode = !darkMode;
+        }
+
+        function openNewPage() {
+            window.open('https://www.youtube.com/@Michael-b6x9h', '_blank');
+        }
+    </script>
+</body>
+</html>
