@@ -5,6 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>吉他頁面</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #77aaff 3px solid;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    header ul {
+      padding: 0;
+      list-style: none;
+    }
+    header li {
+      float: left;
+      display: inline;
+      padding: 0 20px 0 20px;
+    }
+    header #branding {
+      float: left;
+    }
+    header #branding h1 {
+      margin: 0;
+    }
+    header nav {
+      float: right;
+      margin-top: 10px;
+    }
+    header .highlight, header .current a {
+      color: #77aaff;
+      font-weight: bold;
+    }
+    header a:hover {
+      color: #cccccc;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+      background: #fff;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #77aaff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -15,13 +95,13 @@
 
   <main>
     <section class="songs">
-      <div class="container">
+      <!-- <div class="container">
         <h2>曲目列表</h2>
         <ul>
           <li>學習中: <audio controls src="song1.mp3"></audio></li>
           <li>完成的作品: <audio controls src="song2.mp3"></audio></li>
         </ul>
-      </div>
+      </div> -->
     </section>
   </main>
 
@@ -30,5 +110,9 @@
       <a href="index.html">返回首頁</a>
     </div>
   </footer>
+
+  <div class="container" style="text-align: center; margin-top: 20px;">
+    <button onclick="window.location.href='https://www.youtube.com/@Michael-b6x9h';">這邊是我彈奏的吉他歌曲</button>
+  </div>
 </body>
 </html>
